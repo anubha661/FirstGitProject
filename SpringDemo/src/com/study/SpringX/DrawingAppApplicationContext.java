@@ -10,6 +10,7 @@ public class DrawingAppApplicationContext {
 		//spring.xml should be in the src folder or else it won't work
 		ApplicationContext  context= new ClassPathXmlApplicationContext("spring.xml");
 		Triangle t=(Triangle)context.getBean("triangle");
+		System.out.println("first change");
 		t.draw();
 	}
 
